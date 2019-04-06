@@ -1,10 +1,10 @@
 {
-  "name": "node-shopkart",
+  "name": "shopkart",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon bin/www",
-    "seed" : "node seed/product-seeder.js"
+    "seed": "node seed/product-seeder.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -27,5 +27,17 @@
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.4.2",
     "stripe": "^4.17.1"
-  }
+  },
+  "description": "![Application Landing Banner](https://github.com/nirajKpanda/node-shopkart/blob/master/public/images/app-landing-page.PNG)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamshi0997/Heroku-shoppingcart-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamshi0997/Heroku-shoppingcart-/issues"
+  },
+  "homepage": "https://github.com/vamshi0997/Heroku-shoppingcart-#readme"
 }
