@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node seed/product-seeder.js",
+    "start": "nodemon bin/www",
     "seed" : "node seed/product-seeder.js"
   },
   "dependencies": {
