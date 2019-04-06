@@ -1,97 +1,39 @@
-![Application Landing Banner](https://github.com/nirajKpanda/node-shopkart/blob/master/public/images/app-landing-page.PNG)
-
-# A shopping cart project developed with Node JS.
-
-## Development tools
-
-1. Node JS(Server)
-2. Bootstrap(CSS/JS)
-3. Stripe(Payments)
-4. Mongo(Datastore)
-5. Handlebars(Templating)
-6. Moongoose(ORM)
-7. User Authentication(Google Recaptcha, Node Passport)
-
-### Prerequisites
-
-| Prerequisite                                | Version |
-| ------------------------------------------- | ------- |
-| [MongoDB](http://www.mongodb.org/downloads) | `~ ^3`  |
-| [Node.js](http://nodejs.org)                | `~ ^6`  |
-| npm (comes with Node)                       | `~ ^3`  |
-
-> _Updating to the latest releases is recommended_.
-
-If Node or MongoDB is already installed in your machine, run the following commands to validate the versions:
-
-```shell
-node -v
-mongo --version
-```
-
-If your versions are lower than the prerequisite versions, you should update.
-
-#### Setting Up Your System
-
-1. Install [Git](https://git-scm.com/) or your favorite Git client.
-2. (Optional) [Setup an SSH Key](https://help.github.com/articles/generating-an-ssh-key/) for GitHub.
-3. Create a parent projects directory on your system. For this guide, it will be assumed that it is `/mean/`
-
-#### Cloning Repository
-
-1. Open a Terminal / Command Line / Bash Shell in your projects directory (_i.e.: `/yourprojectdirectory/`_)
-2. Clone the node-shopkart repository
-
-```shell
-$ git clone https://github.com/nirajKpanda/node-shopkart.git
-```
-
-This will download the entire node-shopkart repo to your project directory.
-
-#### Setup Your Upstream
-
-1. Change directory to the new node-shopkart directory (`cd node-shopkart`)
-
-Congratulations, you now have a local copy of the node-shopkart project!
+# Shopping Cart Module using Angular2, Node, Express and Mongo  [![MIT license](http://img.shields.io/badge/license-MIT-lightgrey.svg)](http://opensource.org/licenses/MIT)
 
 
-### Setup node-shopkart enviornment
-Once you have node-shopkart cloned, before you start the application, you first need to install all of the dependencies:
+The front-end of this project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
-```bash
-# Install NPM dependencies locally
-npm install --save
+This project uses the [MEAN stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)):
+* [**M**ongoose.js](http://www.mongoosejs.com) ([MongoDB](http://www.mongodb.com)): database
+* [**E**xpress.js](http://expressjs.com): backend framework
+* [**A**ngular 2](https://angular.io): frontend framework
+* [**N**ode.js](https://nodejs.org): runtime environment
+* [Angular CLI](https://cli.angular.io): project scaffolding
+* [Bootstrap 4](http://www.getbootstrap.com): layout and styles
+* [Font Awesome](http://fontawesome.io): icons
 
-# Install nodemon globally
-npm install -g nodemon
-```
+## Prerequisites
+1. Install [Node.js](https://nodejs.org) and [MongoDB](http://www.mongodb.com)
+2. Install Angular CLI: `npm i angular-cli -g`
+3. From project root folder install all the dependencies: `npm i`
 
+## CLOUD URL
+1. The application has been deployed to Heroku - Cloud Application Platform. 
+2. Visit this link to test the application: [https://heroku-node-shopkart.herokuapp.com/](https://heroku-node-shopkart.herokuapp.com/)
 
-# Start the mongo server in a separate terminal
+## Run
+1. Delete all files from 'dist' folder.
+2. Command window 1: `ng build -w`: build the project and keep watching the files for changes
+3. Command window 2: `npm start`: run Express server
+4. Go to [localhost:8080](http://localhost:8080)
+5. Database for the application is placed on Mongo-lab. In order to connect to it, use the following connection settings from any local mongo db client (like RoboMongo):
+   `Database: ds133158.mlab.com`,
+   `Port: 33158`,
+   `Database User: rahul`,
+   `Database User's password: rahul`.		
 
-```
-mongod
-```
+## Production
+Run `ng build -prod` to create a production ready bundle.
 
-# Seed the data in database for the first time.
-# This command should only be run once. (optional)
-
-```
-node seed/product-seeder.js
-```
-
-or
-
-```
-npm run seed
-```
-
-# start the application
-
-```
-npm start
-```
-
-Now navigate to your browser and open
-<http://localhost:3000>. If the app loads,
-congratulations – you're all set.
+### Author
+* [Rahul Srivastava](https://github.com/rahul-openstack)
